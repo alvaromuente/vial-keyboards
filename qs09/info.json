@@ -11,7 +11,8 @@
         "console": false,
         "extrakey": true,
         "mousekey": true,
-        "nkro": false
+        "nkro": false,
+        "encoder": true
     },
     "matrix_pins": {
         "cols": ["C6", "B0", "B5"],

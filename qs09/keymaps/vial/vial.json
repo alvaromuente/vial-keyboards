@@ -2,7 +2,7 @@
   "name": "QS-09",
   "vendorId": "0x514B",
   "productId": "0x5109",
-  "lighting": "vialrgb",
+  "lighting": "none",
   "matrix": { "rows": 3, "cols": 3 },
   "layouts": {
     "keymap": [
