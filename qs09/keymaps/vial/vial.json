@@ -1,6 +1,6 @@
 {
   "name": "QS-09",
-  "vendorId": "0x514b",
+  "vendorId": "0x514B",
   "productId": "0x5109",
   "lighting": "vialrgb",
   "matrix": { "rows": 3, "cols": 3 },
