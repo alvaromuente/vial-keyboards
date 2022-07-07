@@ -25,6 +25,13 @@
         "pid": "0x4D72",
         "vid": "0x4B44"
     },
+    "rgblight": {
+        "brightness_steps": 8,
+        "hue_steps": 8,
+        "led_count": 12,
+        "pin": "B0",
+        "saturation_steps": 8
+    },
     "layouts": {
         "LAYOUT": {
             "layout": [
