@@ -1,7 +1,7 @@
 {
     "name": "MelonBred MB-44", 
-    "vendorId": "0x6d62", 
-    "productId": "0x6d62", 
+    "vendorId": "0x6D62", 
+    "productId": "0x6D62", 
     "lighting": "none", 
     "matrix": { "rows": 4, "cols": 12 },
     "layouts": {
