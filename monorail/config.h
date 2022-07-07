@@ -6,3 +6,5 @@
 
 #define LED_CAPS_LOCK_PIN F4
 #define LED_PIN_ON_STATE 0
+
+#define RGBLIGHT_ANIMATIONS
