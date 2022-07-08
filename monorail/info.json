@@ -10,7 +10,7 @@
         "command": false,
         "console": false,
         "extrakey": true,
-        "mousekey": true,
+        "mousekey": false,
         "nkro": false,
         "rgblight": true
     },
@@ -32,7 +32,11 @@
         "saturation_steps": 8,
         "brightness_steps": 8,
         "animations": {
-            "all": true
+            "all": false,
+		"static_gradient": true,
+		"breathing": true,
+		"rainbow_swirl": true,
+		"rainbow_mood": true
         }
     },
     "layouts": {
