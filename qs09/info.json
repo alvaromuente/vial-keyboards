@@ -10,7 +10,7 @@
         "command": false,
         "console": false,
         "extrakey": true,
-        "mousekey": true,
+        "mousekey": false,
         "nkro": false,
         "encoder": true,
         "rgb_matrix": true
@@ -25,6 +25,13 @@
         "device_version": "1.0.0",
         "pid": "0x5109",
         "vid": "0x514B"
+    },
+    "rgblight": {
+        "hue_steps": 8,
+        "saturation_steps": 8,
+        "brightness_steps": 8,
+        "max_brightness": 255,
+        "sleep": true
     },
     "rgb_matrix": {
         "layout": [
