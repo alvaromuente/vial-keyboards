@@ -13,7 +13,7 @@
         "mousekey": true,
         "nkro": false,
         "encoder": true,
-        "rgblight": true
+        "rgb_matrix": true
     },
     "matrix_pins": {
         "cols": ["C6", "B0", "B5"],
@@ -26,21 +26,23 @@
         "pid": "0x5109",
         "vid": "0x514B"
     },
-    "rgblight": {
-        "led_count": 13,
-        "pin": "C5",
-        "hue_steps": 8,
-        "saturation_steps": 8,
-        "brightness_steps": 8,
-        "animations": {
-            "all": false,
-		"static_gradient": true,
-		"breathing": true,
-		"rainbow_swirl": true,
-		"rainbow_mood": true
-        },
-        "sleep": true
-    },
+    "rgb_matrix": {
+        "layout": [
+          { "flags": 4, "matrix": [2, 0], "x": 25, "y": 25 },
+          { "flags": 4, "matrix": [2, 1], "x": 45, "y": 25 },
+          { "flags": 4, "matrix": [2, 2], "x": 45, "y": 45 },
+          { "flags": 4, "matrix": [1, 2], "x": 25, "y": 45 },
+          { "flags": 4, "matrix": [0, 2], "x": 5, "y": 5 },
+          { "flags": 4, "matrix": [0, 1], "x": 25, "y": 5 },
+          { "flags": 4, "matrix": [1, 1], "x": 5, "y": 45 },
+          { "flags": 4, "matrix": [1, 0], "x": 5, "y": 25 },
+          { "flags": 4, "matrix": [0, 0], "x": 45, "y": 5 },
+          { "flags": 2, "x": 45, "y": 45 },
+          { "flags": 2, "x": 45, "y": 25 },
+          { "flags": 2, "x": 5, "y": 25 },
+          { "flags": 2, "x": 5, "y": 45 }
+        ]
+      },
     "layouts": {
         "LAYOUT": {
             "layout": [
