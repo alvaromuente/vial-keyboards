@@ -38,7 +38,8 @@
 		"breathing": true,
 		"rainbow_swirl": true,
 		"rainbow_mood": true
-        }
+        },
+        "sleep": true
     },
     "layouts": {
         "LAYOUT": {
