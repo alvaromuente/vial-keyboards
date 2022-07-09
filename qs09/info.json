@@ -12,7 +12,8 @@
         "extrakey": true,
         "mousekey": true,
         "nkro": false,
-        "encoder": true
+        "encoder": true,
+        "rgblight": true
     },
     "matrix_pins": {
         "cols": ["C6", "B0", "B5"],
@@ -24,6 +25,20 @@
         "device_version": "1.0.0",
         "pid": "0x5109",
         "vid": "0x514B"
+    },
+    "rgblight": {
+        "led_count": 13,
+        "pin": "C5",
+        "hue_steps": 8,
+        "saturation_steps": 8,
+        "brightness_steps": 8,
+        "animations": {
+            "all": false,
+		"static_gradient": true,
+		"breathing": true,
+		"rainbow_swirl": true,
+		"rainbow_mood": true
+        }
     },
     "layouts": {
         "LAYOUT": {
