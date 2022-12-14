@@ -19,6 +19,12 @@
         "cols": ["C6", "B0", "B5"],
         "rows": ["D1", "D2", "B6"]
     },
+    "encoder": {
+        "rotary": [
+            { "pin_a": "C7", "pin_b": "B7" }
+            { "pin_a": "D3", "pin_b": "D4" }
+        ]
+    },
     "processor": "atmega32u2",
     "url": "https://quark.works/",
     "usb": {
@@ -33,6 +39,7 @@
         "max_brightness": 255
     },
     "rgb_matrix": {
+        "driver": "WS2812",
         "layout": [
           { "flags": 4, "matrix": [2, 0], "x": 25, "y": 25 },
           { "flags": 4, "matrix": [2, 1], "x": 45, "y": 25 },
