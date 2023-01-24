@@ -28,6 +28,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
       _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
       _______, _______, _______, _______,      _______,          _______,     _______, _______, _______, _______
+    ),
+    [4] = LAYOUT( 
+      _______, _______, _______, _______, _______, _______, 
+      _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+      _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+      _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+      _______, _______, _______, _______,      _______,          _______,     _______, _______, _______, _______
     )
 
 };
@@ -37,27 +44,17 @@ void keyboard_post_init_user(void) {
   setPinOutput(LED1_PIN);
   setPinOutput(LED2_PIN);
 
-  writePin(LED0_PIN, 1);
+  writePin(LED0_PIN, 0);
 }
 
-layer_state_t layer_state_set_user(layer_state_t state) {
-    switch (get_highest_layer(state)) {
-    case 1:
-        writePin(LED2_PIN, 1);
-        writePin(LED1_PIN, 0);
-        break;
-    case 2:
-        writePin(LED2_PIN, 0);
+bool led_update_user(led_t led_state) {
+    if (led_state.caps_lock) { //caps on, light them all
+        writePin(LED0_PIN, 1);
         writePin(LED1_PIN, 1);
-        break;
-    case 3:
-        writePin(LED2_PIN, 1);
-        writePin(LED1_PIN, 1);
-        break;
-    default: //  for any other layers, or the default layer
-        writePin(LED2_PIN, 0);
-        writePin(LED1_PIN, 0);
-        break;
+        writePin(LED2_PIN, 1);       
+    } else { //caps off
+		writePin(LED0_PIN, 0);
+		writePin(LED1_PIN, 0);
+		writePin(LED2_PIN, 0);
     }
-  return state;
-}
+    return true;
